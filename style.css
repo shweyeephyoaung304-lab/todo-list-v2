@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f1f8f5;
+    color: #2d3b36;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 80px 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    align-self: flex-start;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #d8e6df;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #34c38f;
+}
+
+#addBtn {
+    padding: 10px 18px;
+    background: #34c38f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background: #2bab7c;
+}
+
+#delallBtn{
+    padding: 10px 18px;
+    background: #c74831;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#delallBtn:hover{
+    background: rgb(173, 77, 55);
+}
+
+#list {
+    list-style: none;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 4px;
+    border-bottom: 1px solid #edf3f0;
+    font-size: 15px;
+    word-break: break-word;
+}
+
+#list li:last-child {
+    border-bottom: none;
+}
+
+#list li button {
+    background: none;
+    border: none;
+    color: #a0aea8;
+    font-size: 13px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#list li button:hover {
+    color: #e5534b;
+}
